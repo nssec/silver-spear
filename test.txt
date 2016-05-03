@@ -1,0 +1,5 @@
+$gg = Get-Process firefox -ErrorAction SilentlyContinue
+
+if ($gg) {
+	ping -n 1 -l 1000 10.10.10.10
+}
